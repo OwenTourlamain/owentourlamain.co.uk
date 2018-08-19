@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+		<link rel="shortcut icon" href="./images/favicon.ico">
+		<meta charset="UTF-8" />
+		<title>CS15020 Assignment 1</title>
+	</head>
+	<body>
+		<header>
+			<a href=""><h1>CS15020 Assignment 1 Website</h1></a>
+			<p>Owen Tourlamain</p>
+			<hr/>
+			<nav>
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li id="activeTab"><a href="">CV</a></li>
+				  <li><a href="about.html">Write Up</a></li>
+				  <li id="navDivider"><a href="../wordpress">WordPress</a></li>
+				  <li><a href="../webshop/catalog">OSCommerce</a></li>
+				</ul>
+			</nav>
+			<hr id="headerEnd"/>
+		</header>
+		<main>
+			<div class="div_container">
+				<div id="div_input">
+					<input type="text" placeholder="Enter your name" id="txt_input" maxlength="30"/>
+					<p id="p_output"></p>
+				</div>
+				<button type="button" onclick="btn_submit();" id="btn_submit">Submit</button>
+			</div>
+			<div class="div_container">
+				<h1>CV</h1>
+				<hr/>
+				<h1 class="left_aligned address">Owen Tourlamain</h1>
+				<h2 class="left_aligned address">Garllegan House</h2>
+				<h2 class="left_aligned address">Meidrim</h2>
+				<h2 class="left_aligned address">Carmarthenshire</h2>
+				<h2 class="left_aligned address">SA33 5PJ</h2>
+				<hr class="address_hr"/>
+				<h2 class="left_aligned address">opt1@aber.ac.uk</h2>	
+				<hr class="address_hr"/>
+				<h2 class="left_aligned address">07818038919</h2>				
+				<hr class="address_hr"/>
+				<h1>Profile</h1>
+				<p class="left_aligned">
+				I am an enthusiastic and experienced first year software engineer, 
+				studying at Aberystwyth University. I am on track for a good first 
+				level degree with skills in web development and content management, 
+				along with a good understanding of both Windows and Unix systems 
+				from a web perspective. I have experience in the creation of web 
+				pages and applications along with the relevant graphics. Now I am 
+				seeking to expand my web development knowledge and skills in a 
+				practical and real world situation.
+				</p>
+				<hr/>
+				<h1>Key Achievements and Skills</h1>
+				<ul class="left_aligned">
+					<li>I am good at working within a team.</li>
+					<li>I am careful to make sure my work contains all the needed details.</li>
+					<li>I have created this website, including WordPress and OScommerce, on a Unix system as part of my Web Development module.</li>
+					<li>I have experience with:</li>	
+					<li>HTML, XML, JavaScript and Perl
+						<ul>
+							<li>HTML 4.01 in A-Level computing</li>
+							<li>HTML 5, XML and JavaScript in Web Development Module</li>
+							<li>Perl at Aberystwyth Summer University</li>
+							<li>JavaScript and Perl are also frequently used in my free time</li>
+						</ul>
+					</li>
+					<li>Windows and Unix
+						<ul>
+							<li>I use both Windows 7 and 8 daily</li>
+							<li>Also have experience with Vista and XP</li>
+							<li>Regularly use Raspian (Debian) on Raspberry Pi, also used Mint and Ubuntu</li>
+							<li>All from a developer’s viewpoint</li>
+						</ul>
+					</li>
+					<li>DreamWeaver
+						<ul>
+							<li>Used extensively for GCSE ICT</li>
+						</ul>
+					</li>
+					<li>Photoshop
+						<ul>
+							<li>Used in free time along with GIMP</li>
+						</ul>
+					</li>
+				</ul>
+				<hr/>
+				<h1>Education</h1>
+				<h2 class="left_aligned">2013 - Onwards: Aberystwyth University - Software Engineering (Including Industrial year)</h2>
+				<table>
+					<tr>
+						<td class="tbl_title left_aligned">Outcome:</td>
+						<td class="left_aligned">Masters in Engineering.</td>
+					</tr>
+					<tr>
+						<td class="tbl_title left_aligned">Content:</td>
+						<td class="left_aligned">Introduction to Programming, Hardware, Unix, Web Development and Communications.</td>
+					</tr>
+					<tr>
+						<td class="tbl_title left_aligned">Future:</td>
+						<td class="left_aligned">Advanced Programming, Web Administration and Applications, AI and Robotics.</td>
+					</tr>
+				</table>
+				<hr/>
+				<h2 class="left_aligned">2011 - 2013: Ysgol Dyfryn Taf - Sixth Form</h2>
+				<table>
+					<tr>
+						<td class="tbl_title left_aligned">Outcome:</td>
+						<td class="left_aligned">B - Computing, D - Physics.</td>
+					</tr>
+					<tr>
+						<td class="tbl_title left_aligned">Content:</td>
+						<td class="left_aligned">Studied HTML and networking technologies.</td>
+					</tr>
+				</table>
+				<hr/>
+				<h2 class="left_aligned">2006 - 2011: Ysgol Dyfryn Taf - GCSE’s</h2>
+				<table>
+					<tr>
+						<td class="tbl_title left_aligned">Outcome:</td>
+						<td class="left_aligned">A*, 2 As, B, 5 Cs.</td>
+					</tr>
+					<tr>
+						<td class="tbl_title left_aligned">Content:</td>
+						<td class="left_aligned">Learned DreamWeaver in ICT.</td>
+					</tr>
+				</table>
+				<hr/>
+				<h1>Employment</h1>
+				<p class="left_aligned">
+					None yet, but I am keen to get some experience!
+				</p>
+				<hr/>
+				<h1>Interests</h1>
+				<p class="left_aligned">
+					I am very interested in the way the web is evolving 
+					and I want to be a part of that. I like developing 
+					applications that work across multiple platforms, 
+					such as websites for both mobile and desktop clients. 
+					I also have interests in hardware development and I 
+					would be very interested in learning how the servers 
+					and back-end systems function.
+				</p>
+				<hr/>
+				<br/>
+				<p class="left_aligned">
+					My CV is also available as a PDF <a id="pdf_link" href="res/cv.pdf">here</a>.
+				</p>
+				
+			</div>
+		</main>
+		<footer>
+			<table>
+				<tr>
+					<td>
+						<a href="http://goo.gl/hf1sNU">
+							<img src="images/valLogo.png" alt="Validation Link" height="50" width="306" />
+						</a>
+					</td>
+					<td id="ft_center"></td>
+					<td>
+						Theme:
+						<select id="sel_colour" onchange="sel_colour();">
+							<option>Light</option>
+							<option>Dark</option>
+							<option>Fire</option>  
+							<option>Ice</option>
+							<option>Grass</option>
+							<option>Sepia</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</footer>
+		<script src="main.js"></script>
+	</body>
+</html>

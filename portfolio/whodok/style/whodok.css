@@ -1,0 +1,226 @@
+.hidden {
+	display: none;
+	height: 0px;
+	width: 0px;
+}
+
+#canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+#foreground {
+	position: relative;
+	z-index: 1;
+}
+
+#wrapper_div {
+	margin: auto;
+	width: 860px;
+	text-align: center;
+}
+
+#left_fade {
+	float: left;
+	margin-left: 0px;
+	margin-right: auto;
+	height: 21px;
+	width: 130px;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(203, 233, 255, 1));
+}
+
+#right_fade {
+	float: left;
+	margin-left: 0px;
+	margin-right: auto;
+	height: 21px;
+	width: 130px;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(203, 233, 255, 1));
+}
+
+#holder_div {
+	border-width: 4px;
+	border-color: #8DDAFF;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	text-align: left;
+	overflow-y: hidden;
+	/* complete liquid height based on the parent's height!! */
+    	height:100%;
+
+   	 /* only transition on transform properties which are hardware accelerated = way better performances */
+	-webkit-transition:-webkit-transform .7s ease;
+        -moz-transition:   -moz-transform .7s ease;
+        -ms-transition:    -ms-transform .7s ease;
+            transition:        transform .7s ease;
+}
+
+#holder_div, p {
+	padding-left: 20px;
+	padding-right: 20px;
+	z-index: 1;
+}
+
+#img_wrapper {
+	background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), white, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)); /* Standard syntax */
+}
+
+#slide_container {
+	overflow:hidden;
+	width: 50%;
+	margin: auto;
+	padding: 8px;	
+}
+
+html {
+	background: #000000;
+	font-family: arial;
+	text-align: center;
+	color: #E7E2D9;
+}
+
+body {
+	margin: 0px;
+}
+
+strong, h1, h2, h3 {
+	color: #8DDAFF;
+}
+
+a {
+	color: #FFFFFF;
+    	text-decoration: none;
+}
+
+h1 a {
+	color: #8DDAFF;
+}
+
+p a {
+	color: #8DDAFF;
+	text-decoration: underline;
+}
+
+nav {
+	float: left;
+	background: #CBEEFF;
+	margin-left: 0px;
+	width: 600px;
+	height: 21px;
+	z-index: 2;
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: auto;
+	cursor: pointer;
+}
+
+.nav_a {
+	font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.open { 
+	border-bottom-style: solid;
+    /* visible */
+    -webkit-transform: translate(0, 0%);
+       -moz-transform: translate(0, 0%);
+        -ms-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+}
+
+.close {
+	border-bottom-style: none;
+    /* completely offscreen */
+    -webkit-transform: translate(0, -100%);
+       -moz-transform: translate(0, -100%);
+        -ms-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+}
+
+.menu_main {
+	display: inline-block;
+	width: 90%;
+	margin-left: 10%;
+	margin-top: 0px;
+}
+
+.last {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.list_hr {
+	padding: 0px;
+	margin: 0px;
+}
+
+nav ul {
+	padding: 0;
+	list-style: none;
+	z-index: 2;
+}
+
+nav ul li {
+	float: left;
+	width: 150px;
+	text-align: center;
+	margin: auto;
+	z-index: 2;
+}
+
+nav ul li a {
+	display: block;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin: 0px;
+	height: 21px;
+	color: #000000;
+	background: #CBEEFF;
+	text-decoration: none;
+	z-index: 2;
+}
+
+nav ul li a:hover {
+	cursor: pointer;  
+	color: #4C49FF;
+	z-index: 2;
+}
+
+nav ul li ul {
+	width: 200px;
+	position: absolute;
+	display: none;
+	z-index: 2;
+}
+
+nav ul li:hover ul {
+	display: block;
+	z-index: 2;
+}
+
+.you-tube {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.you-tube iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

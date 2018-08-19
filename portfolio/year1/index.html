@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" href="./images/favicon.ico">
+		<meta charset="UTF-8" />
+		<title>CS15020 Assignment 1</title>
+	</head>
+	<body>
+	
+		<div id="pHead">
+			<a id="pBack" href="../../">
+			Back
+			</a>
+			<p>
+			These pages showcase my work for Whodok. 
+			These pages are presented as examples of my 
+			work. They are in no way associated with, or 
+			representative of, Whodok in any way. Please 
+			visit <a href="http://www.whodok.com">Whodok.com</a> 
+			for more information.
+			</p>
+		</div>
+		
+		<header>
+			<a href=""><h1>CS15020 Assignment 1 Website</h1></a>
+			<p>Owen Tourlamain</p>
+			<hr/>
+			<nav>
+				<ul>
+				  <li id="activeTab"><a href="">Home</a></li>
+				  <li><a href="cv.html">CV</a></li>          
+				  <li><a href="about.html">Write Up</a></li>
+				  <li id="navDivider"><a href="../wordpress">WordPress</a></li>
+				  <li><a href="../webshop/catalog">OSCommerce</a></li>
+				</ul>
+			</nav>
+			<hr id="headerEnd"/>
+		</header>
+		<main>
+			<div class="div_container">
+				<div id="div_input">
+					<input type="text" placeholder="Enter your name" id="txt_input" maxlength="30"/>
+					<p id="p_output"></p>
+				</div>
+				<button type="button" onclick="btn_submit();" id="btn_submit">Submit</button>
+			</div>
+			<div class="div_container">
+				<h1>Welcome to my CS15020 Website!</h1>
+				<hr/>
+				<h2 class="left_aligned">What is this?</h2>
+				<p class="left_aligned">
+				Here you will find my Assignment 2 website. 
+				This includes my CV in HTML form, 
+				my write up for this assignment, and links to 
+				the two parts of the previous assignment.
+				Please use the links above to navigate through 
+				each section of this website.
+				</p>
+				<hr/>
+				<h2 class="left_aligned">What else is here?</h2>
+				<p class="left_aligned">
+				I have also made a small greeting dialogue with JavaScript, and 
+				a drop-down menu that lets you change the 
+				websites theme. both of these functions use 
+				cookies to ensure that choices are persistent 
+				across each page on the web site. The greetings 
+				can be accessed from the top of every page and 
+				the theme picker from the bottom.
+				</p>
+				<hr/>
+				<h2 class="left_aligned">Declarations</h2>
+				<p class="left_aligned">
+				This website is entirely my own work except where noted, and cited, in the source.
+				</p>
+				<br/>
+				<p class="left_aligned">
+				The information provided on this and other pages by me, Owen Tourlamain (opt1@aber.ac.uk), is
+				under my own personal responsibility and not that of Aberystwyth University. Similarly,
+				any opinions expressed are my own and are in no way to be taken as those of A.U.
+				</p>
+				<br/>
+				<p class="left_aligned">
+				I also declare that I am not liable for the ugliness of this website, I am a programmer, not an artist.
+				</p>
+				<hr/>
+			</div>
+		</main>
+		<footer>
+			<table>
+				<tr>
+					<td>
+						<a href="http://goo.gl/wYHBHs">
+							<img src="images/valLogo.png" alt="Validation Link" height="50" width="306" />
+						</a>
+					</td>
+					<td id="ft_center"></td>
+					<td>
+						Theme:
+						<select id="sel_colour" onchange="sel_colour();">
+							<option>Light</option>
+							<option>Dark</option>
+							<option>Fire</option>  
+							<option>Ice</option>
+							<option>Grass</option>
+							<option>Sepia</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</footer>
+		<script src="main.js"></script>
+	</body>
+</html>

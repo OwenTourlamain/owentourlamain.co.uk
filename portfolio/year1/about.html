@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+		<!--
+			Favicon taken from http://www.freefavicon.com/freefavicons/openclipart/iconinfo/hal9000-152-187546.html
+		-->
+		<link rel="shortcut icon" href="./images/favicon.ico">
+		<meta charset="UTF-8" />
+		<title>CS15020 Assignment 1</title>
+	</head>
+	<body>
+		<header>
+			<a href=""><h1>CS15020 Assignment 1 Website</h1></a>
+			<p>Owen Tourlamain</p>
+			<hr/>
+			<nav>
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="cv.html">CV</a></li>
+				  <li id="activeTab"><a href="">Write Up</a></li>
+				  <li id="navDivider"><a href="../wordpress">WordPress</a></li>
+				  <li><a href="../webshop/catalog">OSCommerce</a></li>
+				</ul>
+			</nav>
+			<hr id="headerEnd"/>
+		</header>
+		<main>
+			<div class="div_container">
+				<div id="div_input">
+					<input type="text" placeholder="Enter your name" id="txt_input" maxlength="30"/>
+					<p id="p_output"></p>
+				</div>
+				<button type="button" onclick="btn_submit();" id="btn_submit">Submit</button>
+			</div>
+			<div class="div_container">
+				<h1>Assignment Write Up</h1>
+				<hr/>
+				<h1 class="left_aligned">My Development Environment</h1>
+				<hr/>
+				<p class="left_aligned">
+					I used Notepad++ to write my web-pages, and Google Chrome (version: 33.0.1750.154) under Windows 8.1
+					as my main testing platform. I also used the following to check cross-browser compatibility:
+				</p>
+				<br/>
+				<p class="left_aligned">Under Windows 8.1 and 7:</p>
+				<ul class="left_aligned">
+					<li>Microsoft Internet Explorer(versions 5 to current, Using compatibility mode</li>
+					<li>Mozilla Firefox (version: 28.0)</li>
+				</ul>
+				<p class="left_aligned">Under Android 4.3:</p>
+				<ul class="left_aligned">
+					<li>Google Chrome (version: 33.0.1750.166)</li>
+					<li>Android Browser(version: Unknown, Latest)</li>
+				</ul>
+				<h1 class="left_aligned">My Approach</h1>
+				<p class="left_aligned">
+					For	this assignment I started off by testing small chunks of HTML and CSS 
+					to see how they worked and what sort of result they achieved. Once I was 
+					happy with how everything worked, and I had a (sort-of) design goal, I
+					began building the index page.
+				</p>
+				<h2 class="left_aligned">The Header</h2>
+				<p class="left_aligned">
+					I Began by working on the header part of my page. I initially used drop 
+					down menus for navigation, but I decided against those in favour of stylised 
+					hyper-links. I tweaked each part of the CSS to make the header display as
+					I wanted, and made sure this looked fine across each of my testing browsers.
+				</p>
+				<br/>
+				<p class="left_aligned">
+					At this point I debated weather or not to use separate files for my header 
+					and planned footer. I decided not to, as I thought it would over complicate 
+					the end result for me, when I could just copy and paste the relevant code.
+					Also, keeping the files separate allowed me to mark the current page with
+					an underline very easily.
+				</p>
+				<h2 class="left_aligned">JavaScript</h2>
+				<p class="left_aligned">
+					After all this I decided I was ready to try my hand at some JavaScript. I 
+					initially had my code in the index.html file, but I moved it out into its own
+					main.js file to allow each page to use the same code. While creating this file,
+					I messed around with various functions, which lead to the development of the 
+					theme picker.
+				</p>
+				<p class="left_aligned">
+					My JavaScript contains my only copied code. These pieces of code were taken
+					because I could see no simpler way of doing their job. I made sure to study 
+					the code that I copied to understand what each part was doing.
+				</p>
+				<h2 class="left_aligned">Multiple CSS Files</h2>
+				<p class="left_aligned">
+					I had the idea for the theme switcher early on, but I left it until the end 
+					as it was rather daunting. When I finally started, I realised that it was 
+					actually quite easy to achieve. The hardest part of this was the effort 
+					required to make each CSS file.
+				</p>
+				<h2 class="left_aligned">Finishing Up</h2>
+				<p class="left_aligned">
+					To finalise my assignment, I added in the lastModified JavaScript, the links 
+					to the validators and the website favicon, which I got from a free favicon 
+					website.
+				</p>
+			</div>			
+		</main>
+		<footer>
+			<table>
+				<tr>
+					<td>
+						<a href="http://goo.gl/XuwbYo">
+							<img src="images/valLogo.png" alt="Validation Link" height="50" width="306" />
+						</a>
+					</td>
+					<td id="ft_center"></td>
+					<td>
+						Theme:
+						<select id="sel_colour" onchange="sel_colour();">
+							<option>Light</option>
+							<option>Dark</option>
+							<option>Fire</option>  
+							<option>Ice</option>
+							<option>Grass</option>
+							<option>Sepia</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</footer>
+		<script src="main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^whodok\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.whodok\.com$
+RewriteRule ^jobs$ "http\:\/\/www\.jobsatwhodok\.tk\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^whodok\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.whodok\.com$
+RewriteRule ^boards$ "http\:\/\/www\.indyausgamesproj\.boards\.net\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^whodok\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.whodok\.com$
+RewriteRule ^clockin$ "http\:\/\/www\.timeclockfree\.com\/app\.html" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^whodok\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.whodok\.com$
+RewriteRule ^twitter$ "http\:\/\/www\.twitter\.com\/whodok" [R=301,L]
+

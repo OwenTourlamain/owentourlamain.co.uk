@@ -1,0 +1,164 @@
+.div_container {
+	background-color: #009900;
+	border-radius: 25px;
+	width: 80%;
+	margin: auto;
+	margin-top: .5em;
+	padding: .5em;
+}
+
+.left_aligned{
+	text-align: left;
+}
+
+.address {
+	font-size: 18px;
+}
+
+.address_hr {
+	width: 11em;
+	margin-left: 0px;
+}
+
+.tbl_title {
+	width: 10%;
+	font-weight: bold;
+}
+
+#ft_center {
+	width: 60%;
+}
+
+#pdf_link {
+	text-decoration: underline;
+}
+
+#div_input {
+	width: 20%;
+	margin: auto;
+	text-align: center;
+}
+
+#toggle {
+	display: none;
+}
+
+#activeTab {
+	text-decoration: underline;
+}
+
+#navDivider {
+	border-left: groove #101010;
+	padding-left: .3em;
+}
+
+#headerEnd {
+	margin-left: auto;
+	margin-right: auto;
+	width: 97.5%;
+}
+
+header {
+	background-color: #009900;
+	text-align: center;
+	padding: 1px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+header hr {
+	margin: 4px;
+	border-color: #101010;
+}
+
+header h1, p {
+	margin: 3px;
+}
+
+header h1, a {
+	text-decoration: none;
+	color:inherit;
+}
+
+header a.button:visited {
+	color:inherit;
+}
+
+header br {
+	margin: 1px;
+}
+
+nav ul {
+	margin: 3px;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav ul li { 
+	display: inline; 
+}
+
+nav ul li a {
+	text-decoration: none;
+	padding: .1em 1em;
+	color: #000000;
+	border: solid transparent;
+	border-width: 2px;
+	border-radius: 25px;
+}
+
+nav ul li a:hover {
+	border: solid #005000;
+	border-width: 2px;
+}
+
+hr {
+	border-color: #101010;
+}
+
+input {
+	background-color: #006600;
+	border-color: #008800;
+	margin: auto;
+	width: 12em;
+	border-radius: 25px;
+	text-align: center;
+}
+
+button {
+	background-color: #008800;
+	border-radius: 25px;
+	border-color: #006600;
+	margin: auto;
+	width: 8em;
+	text-align: center;
+}
+
+table {
+	width: 100%;
+}
+
+main {
+	overflow: auto;
+	margin: auto;
+	text-align: center;
+}
+
+body {
+	background-color: #005000;
+	margin: 0px;
+	margin-left: 1%;
+	margin-right: 1%;
+	font-family: calibri;
+}
+
+footer {
+	margin-top: .5em;
+    height: 50px;
+	padding: 1em;
+    background-color: #009900;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	
+}
